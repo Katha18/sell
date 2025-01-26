@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h2>Welcome to Gadget Exchange</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Old Gadgets</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #4CAF50;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130vh;
+        }
+
+        .sell-container {
+            width: 100%;
+            max-width: 450px;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .sell-container h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #4CAF50;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #555;
+        }
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #007acc;
+        }
+
+        .sell-button {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .sell-button:hover {
+            background-color: #de720d;
+        }
+    </style>
+</head>
+<body>
+    <div class="sell-container">
+        <h1>Sell Your Gadget</h1>
+        <form>
+            <div class="form-group">
+                <label for="gadget">Gadget Name</label>
+                <input type="text" id="gadget" name="gadget" placeholder="Enter gadget name" required>
+            </div>
+            <div class="form-group">
+                <label for="brand">Brand</label>
+                <select id="brand" name="brand" required>
+                    <option value="">Select a brand</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="condition">Condition</label>
+                <select id="condition" name="condition" required>
+                    <option value="">Select condition</option>
+                    <option value="New">New</option>
+                    <option value="Like New">Like New</option>
+                    <option value="Used">Used</option>
+                    <option value="Damaged">Damaged</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price">Expected Price</label>
+                <input type="number" id="price" name="price" placeholder="Enter expected price" required>
+            </div>
+<div class="form-group">
+                <label for="picture">Upload Picture</label>
+                <input type="file" id="picture" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="sell-button">Sell Gadget</button>
+        </form>
+    </div>
+</body>
+</html>
